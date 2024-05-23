@@ -1,0 +1,135 @@
+@keyframes load {
+	from {
+		background-color: #5bec19;
+		width: 0;
+	}
+25%{
+	
+}
+	to {
+		background-color: #5bec19;
+		width: 90%;
+	}
+}
+
+
+.wrapper {
+	padding: 50px;
+}
+
+.loader {
+	margin: 0 auto;
+	border: 3px solid rgb(55, 131, 20);
+	height: 50px;
+	width: 80vw;
+
+	margin-bottom: 150px;
+}
+
+.loader-90 {
+	display: flex;
+	height: 100%;
+	animation: load 4s ease-in-out forwards;
+
+	align-items: center;
+	justify-content: center;
+}
+
+
+@keyframes hover-anim {
+	form {
+		width: 10vw;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+.hover-animation {
+	background-color: #febb00;
+	width: 10vw;
+	height: 100px;
+
+	animation: hover-anim 3s ease none infinite alternate;
+	animation-play-state: paused;
+
+	margin-bottom: 200px;
+}
+
+.hover-animation:hover {
+	animation-play-state: running;
+}
+
+
+@keyframes bouncing {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(50px, 275px);
+	}
+
+	30% {
+		transform: translate(70px, 240px);
+	}
+
+	40% {
+		transform: translate(90px, 230px)
+	}
+
+	50% {
+		transform: translate(110px, 240px)
+	}
+
+
+	60% {
+		transform: translate(130px, 260px)
+	}
+
+	65% {
+		transform: translate(140px, 270px)
+	}
+	
+	70% {
+		transform: translate(150px, 275px)
+	}
+
+	75% {
+		transform: translate(160px, 260px)
+	}
+	
+	80% {
+		transform: translate(180px, 250px)
+	}
+
+	85% {
+		transform: translate(190px, 265px)
+	}
+
+	90% {
+		transform: translate(210px, 275px)
+	}
+	100% {
+		transform: translate(275px, 275px)
+	}
+}
+
+.box {
+	margin: 0 auto 200px;
+	width: 300px;
+	height: 300px;
+	border: #febb00 5px solid;
+}
+
+.circle {
+	background-color: #2600fe;
+	border-radius: 15px;
+	width: 25px;
+	height: 25px;
+	/* transform: translate(75px, 275px); */
+
+	animation: bouncing 3s linear;
+	animation-iteration-count: infinite;
+}
